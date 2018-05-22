@@ -41,7 +41,7 @@ public class Appointment {
 
     @Override
     public String toString() {
-        return "Appointment{" +
+        return "AppointmentMapper{" +
                 "bookId=" + bookId +
                 ", appointTime=" + appointTime +
                 '}';

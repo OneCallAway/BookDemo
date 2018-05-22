@@ -1,5 +1,6 @@
 package com.ty.mapper;
 
+import com.ty.po.Appointment;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
  * @desc appointmentDao
  **/
 
-public class Appointment {
+public interface AppointmentMapper {
     //根据学生id和图书id预约图书,并插入
     int insertAppointment (@Param("bookId")int bookId,@Param("studentId")int studentId);
 

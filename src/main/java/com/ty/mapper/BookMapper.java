@@ -11,7 +11,7 @@ import java.util.List;
  * @desc bookDao
  **/
 
-public class BookMapper {
+public interface BookMapper {
 
     /**
      * 根据id查询图书

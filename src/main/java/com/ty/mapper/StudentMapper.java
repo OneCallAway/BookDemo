@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Param;
  * @desc StudentDao
  **/
 
-public class StudentMapper {
+public interface StudentMapper {
     /**
      * 向数据库验证输入的密码是否正确
      */

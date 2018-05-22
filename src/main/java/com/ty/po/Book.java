@@ -7,50 +7,60 @@ package com.ty.po;
  **/
 
 public class Book {
-    private int BookId;
-    private String nama;
+    private int bookId;
+    private String name;
     private int number;
+    private String introd;
+
 
     public Book(){
-
     }
 
-    public Book(int bookId,String name,int number){
-        this.BookId = bookId;
-        this.nama = name;
+    public Book(int bookId,String name,int number,String introd){
+        this.bookId = bookId;
+        this.name = name;
         this.number = number;
+        this.introd = introd;
     }
 
     public int getBookId() {
-        return BookId;
+        return bookId;
     }
 
     public void setBookId(int bookId) {
-        BookId = bookId;
+        bookId = bookId;
     }
 
-    public String getNama() {
-        return nama;
+    public String getName() {
+        return name;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setName(String nama) {
+        this.name = nama;
     }
 
     public int getNumber() {
         return number;
     }
-
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public String getIntrod() {
+        return introd;
+    }
+
+    public void setIntrod(String introd) {
+        this.introd = introd;
     }
 
     @Override
     public String toString() {
         return "Book{" +
-                "BookId=" + BookId +
-                ", nama='" + nama + '\'' +
+                "bookId=" + bookId +
+                ", name='" + name + '\'' +
                 ", number=" + number +
+                ", introd='" + introd + '\'' +
                 '}';
     }
 }
